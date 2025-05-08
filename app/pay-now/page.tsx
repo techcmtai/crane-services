@@ -66,7 +66,7 @@ export default function Home() {
             <div className="w-full mb-3 flex justify-center">
               <Input
                 type="number"
-                min="0.01"
+                min="0.5"
                 step="0.01"
                 value={inputValue}
                 onChange={handleInputChange}
@@ -76,7 +76,7 @@ export default function Home() {
                 autoComplete="off"
               />
             </div>
-            {!showStripeForm && isValidAmount && (
+            {!showStripeForm && isValidAmount && Number(amount) >= 0.5 && (
               <div className="flex justify-center">
                 <Button className="h-11 min-w-[200px] px-8 mt-5" onClick={handleProceed} disabled={loading} type="button">
                   {loading ? (
@@ -92,6 +92,9 @@ export default function Home() {
                   )}
                 </Button>
               </div>
+            )}
+            {isValidAmount && Number(amount) < 0.5 && (
+              <div className="text-center text-red-600 text-sm mt-2">Amount must be at least $0.50</div>
             )}
             {!isValidAmount && (
               <div className="text-center text-muted-foreground text-sm mt-2">Please enter a valid amount to continue.</div>
