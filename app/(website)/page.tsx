@@ -105,13 +105,13 @@ export default function Home() {
       title: t("cranes.telescopicCrawler"),
       capacity: "60–220 tonnes",
       description: t("cranes.telescopicDesc"),
-      image: "/images/allcranes/mobile.jpg",
+      image: "/images/allcranes/1.jpg",
     },
     {
       title: t("cranes.crawler"),
       capacity: "55–800 tonnes",
       description: t("cranes.crawlerDesc"),
-      image: "/images/company/crane-base.png",
+      image: "/images/allcranes/2.jpg",
     },
     {
       title: t("cranes.roughTerrain"),

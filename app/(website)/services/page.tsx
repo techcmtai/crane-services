@@ -206,6 +206,23 @@ export default function ServicesPage() {
               </li>
               <li className="flex items-center">
                 <span className="mr-2 rounded-full bg-red-800 p-1"></span>
+                <span>{t("services.europe")}</span>
+              </li>
+               <li className="flex items-center">
+                <span className="mr-2 rounded-full bg-red-800 p-1"></span>
+                <span>{t("services.middleEast")}</span>
+              </li>
+              
+               <li className="flex items-center">
+                <span className="mr-2 rounded-full bg-red-800 p-1"></span>
+                <span>{t("services.northAmerica")}</span>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2 rounded-full bg-red-800 p-1"></span>
+                <span>{t("services.usa")}</span>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2 rounded-full bg-red-800 p-1"></span>
                 <span>{t("services.ireland")}</span>
               </li>
               <li className="flex items-center">
